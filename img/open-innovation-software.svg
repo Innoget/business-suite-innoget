@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>open-innovation-software</title>
+    <g id="PPT-Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="open-innovation-software">
+            <path d="M65.4304066,101 C93.6296465,101 84.6358942,86.5898726 84.6358942,58.2727273 C84.6358942,29.9555819 93.6296465,7 65.4304066,7 C37.2311667,7 2.56714824,33.5120091 14.3711661,58.2727273 C26.1751839,83.0334455 37.2311667,101 65.4304066,101 Z" id="Oval" fill="#1D7CEE"></path>
+            <path d="M76.4304066,107 C104.629646,107 95.6358942,92.5898726 95.6358942,64.2727273 C95.6358942,35.9555819 104.629646,13 76.4304066,13 C48.2311667,13 13.5671482,39.5120091 25.3711661,64.2727273 C37.1751839,89.0334455 48.2311667,107 76.4304066,107 Z" id="Oval-Copy-17" fill="#1D7CEE" opacity="0.2" transform="translate(60.000000, 60.000000) scale(-1, -1) rotate(45.000000) translate(-60.000000, -60.000000) "></path>
+            <g id="Group" transform="translate(35.000000, 37.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.75">
+                <circle id="Oval" cx="18" cy="17" r="5.5"></circle>
+                <line x1="18" y1="33.5" x2="18" y2="33.5183333" id="Path"></line>
+                <line x1="1.5" y1="11.5" x2="1.5" y2="11.5183333" id="Path"></line>
+                <line x1="34.5" y1="11.5" x2="34.5" y2="11.5183333" id="Path"></line>
+                <path d="M10.6666667,31.85 C5.58150914,29.3696891 2.12177721,24.4568698 1.5,18.8333333" id="Path"></path>
+                <path d="M25.3333333,31.85 C30.4184909,29.3696891 33.8782228,24.4568698 34.5,18.8333333" id="Path"></path>
+                <path d="M7.36666667,4.16666667 C13.4452746,-0.807992743 22.1880587,-0.807992743 28.2666667,4.16666667" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
