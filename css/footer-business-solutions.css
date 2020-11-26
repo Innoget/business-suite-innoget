@@ -4,7 +4,6 @@ footer {
 	border-top: 1px solid #d5dfeb !important;
 	padding: 40px 0;
 	color: #58708d;
-	font-weight: 600;
 }
 
 
@@ -12,6 +11,7 @@ footer .footer-logo {
 	display: flex;
 	flex-direction: row !important;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
 footer .footer-logo > img {

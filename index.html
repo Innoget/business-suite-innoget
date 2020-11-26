@@ -12,10 +12,41 @@
 		<link rel="icon" href="./img/favicon.png" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway:500,600,700" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="./css/navbar-offpage.css" />
-		<link rel="stylesheet" type="text/css" href="./css/footer-offpage.css" />
+		<link rel="stylesheet" type="text/css" href="./css/navbar-business-solutions.css" />
+		<link rel="stylesheet" type="text/css" href="./css/footer-business-solutions.css" />
 		<link rel="stylesheet" type="text/css" href="./css/stylesheet-landing-offpage.css" />
 		<link rel="stylesheet" type="text/css" href="./css/stylesheet-global.css" />
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript">
+			google.charts.load("current", {
+				packages: ["geochart"],
+				mapsApiKey: "AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY",
+			});
+			google.charts.setOnLoadCallback(drawRegionsMap);
+			function drawRegionsMap() {
+				var data = google.visualization.arrayToDataTable([
+					["Region code", "Continent", "Region of origin (%)"],
+					["150", "Europe", 44],
+					["019", "Americas", 32],
+					["142", "Asia", 22],
+					["009", "Oceania", 22],
+					["002", "Africa", 2],
+				]);
+				var options = {
+					region: "world",
+					resolution: "continents",
+					legend: "none",
+					colorAxis: {
+						minValue: 0,
+						colors: ["#B6CCE7", "#1D7CEE"],
+					},
+				};
+				var chart = new google.visualization.GeoChart(
+					document.getElementById("regions_div")
+				);
+				chart.draw(data, options);
+			}
+		</script>
 	</head>
 	<body>
 		<div id="overlay"></div>
@@ -93,7 +124,7 @@
 									<img src="./img/open-innovation-network.svg" alt="">
 									<h3>Open Innovation Network</h3>
 									<p>
-										Innoget.com is the largest trusted open innovation network used by thousands of professionals and organizations to find innovation, research and funding opportunities and connect with innovative minds worldwide.
+										Innoget.com is the Internet's largest open innovation network trusted by professionals and organizations to improve their technology scouting and transfer activities, identify new  opportunities and connect with innovative minds.
 									</p>
 									<h4>Products</h4>
 									<ul>
@@ -104,19 +135,14 @@
 											<a href="https://www.innoget.com/for-research-organizations" title="Innoget.com for R&D Organizations" rel="nofollow" target="_blank">Innoget.com for R&D Organizations</a>
 										</li>
 										<li class="blue regular normal">Innoget.com for Scientists</li>
-										<li class="blue regular normal">
-											<a href="https://www.innoget.com/innovation-events" title="Innovation Events" rel="follow" target="_blank">Innovation Events</a>
-										</li>
-										<li class="blue regular normal">
-											<a href="https://www.innoget.com/innovation-jobs" title="Innovation Jobs" rel="follow" target="_blank">Innovation Jobs</a>
-										</li>
+										<li class="blue regular normal">Open Innovation Groups</li>
 									</ul>
 								</div>
 								<div class="perk">
 									<img src="./img/open-innovation-software.svg" alt="">
 									<h3>Open Innovation Software</h3>
 									<p>
-										InnogetCloud is the modular open innovation software used by organizations to create and manage their own open innovation and technology transfer community as well as digitize their knowledge roadmap.
+										InnogetCloud is the modular open innovation software trusted by organizations worldwide to create, manage and scale up their own open innovation and technology transfer community, as well as digitize their knowledge roadmap.
 									</p>
 									<h4>Products</h4>
 									<ul>
@@ -129,7 +155,7 @@
 									<img src="./img/open-innovation-programs.svg" alt="">
 									<h3>Open Innovation Programs</h3>
 									<p>
-										Companies worldwide work with Innoget to easily build, manage and market their open innovation programs, accelerate innovation and unleash the power of the open innovation ecosystem.
+										Companies worldwide trust Innoget's Open Innovation Programs to efficiently build, manage and market their open innovation programs and contests, accelerate innovation and unleash the power of the open innovation ecosystem.
 									</p>
 									<h4>Products</h4>
 									<ul>
@@ -138,14 +164,333 @@
 										</li>
 										<li class="blue regular normal">Idea Contest</li>
 										<li class="blue regular normal">Startup Contest</li>
-										<li class="blue regular normal">Open innovation Groups</li>
+										<li class="blue regular normal">Open Innovation Consulting</li>
+									</ul>
+								</div>
+								<div class="perk">
+									<img src="./img/open-innovation-academy.svg" alt="">
+									<h3>Open Innovation Academy</h3>
+									<p>
+										Worldwide professionals and organizations trust Innoget's Open Innovation Academy to promote education, develop talent and keep their skills in research, innovation and open innovation current with unique learning resources.
+									</p>
+									<h4>Products</h4>
+									<ul>
+										<li class="blue regular normal">
+											<a href="https://www.innoget.com/innovation-events" title="Innovation Events" rel="follow" target="_blank">Innovation Events</a>
+										</li>
+										<li class="blue regular normal">Education Resources</li>
+									</ul>
+								</div>
+								<div class="perk">
+									<img src="./img/innovation-jobs.svg" alt="">
+									<h3>Innovation Jobs</h3>
+									<p>
+										Worldwide professionals and organizations trust Innoget's Open Innovation Academy to promote education, develop talent and keep their skills in research, innovation and open innovation current with unique learning resources.
+									</p>
+									<h4>Products</h4>
+									<ul>
+										<li class="blue regular normal">
+											<a href="https://www.innoget.com/innovation-jobs" title="Innovation Jobs" rel="follow" target="_blank">Innovation Jobs</a>
+										</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>			
+			</section>	
+			<section id="network" class="bg-white">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="wrapper">
+								<div class="left">
+									<div class="title-area">
+										<h2>Our members represent<br> the best in innovation</h2>
+										<p class="sub-h1">
+											Connect your Open Innovation Challenge to a network of
+											185,000+ innovators, startups, academia and research organizations. 
+										</p>
+									</div>
+									<div id="regions_div" style="width: 500px;"></div>
+								</div>
+								<div class="right">
+									<div class="kpis-bar">
+										<div class="kpi">
+											<span>180+</span>
+											countries of origin
+										</div>
+										<div class="kpi">
+											<span>500+</span>
+											business opportunities
+										</div>
+										<div class="kpi">
+											<span>700+</span>
+											research areas
+										</div>
+										<div class="kpi">
+											<span>6,500+</span>
+											technology offers
+										</div>
+										<div class="kpi">
+											<span>12,100+</span>
+											companies
+										</div>
+										<div class="kpi">
+											<span>30,000+</span>
+											connections provided
+										</div>
+										<div class="kpi">
+											<span>185,000+</span>
+											experts reached
+										</div>
+									</div>
+									<div class="global-alliance">
+										<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-globe" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="#1D7CEE" fill="none" stroke-linecap="round" stroke-linejoin="round">
+											<path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+											<circle cx="12" cy="10" r="4" />
+											<path d="M6.75 16a8.015 8.015 0 1 0 9.25 -13" />
+											<line x1="12" y1="18" x2="12" y2="22" />
+											<line x1="8" y1="22" x2="16" y2="22" />
+										</svg>
+										<div class="text">
+											<span class="blue">Global Open Innovation Alliance</span>
+											<p>Innoget's Open Innovation Challenge Programs are also locally supported by members of our Global Open Innovation Alliance</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="testimonials" class="bg-white">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3"></div>
+						<div class="col-sm-6">
+							<div class="title-area text-center">
+								<h2>
+									Don't just take out word for it.<br />Read what Innoget
+									users say.
+								</h2>
+							</div>
+						</div>
+						<div class="col-sm-3"></div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="testimonials-wrapper">
+								<div id="myCarousel" class="carousel" data-ride="carousel">
+									<div class="carousel-inner">
+										<div class="item active">
+											<div class="item-wrapper">
+												<div class="left">
+													<img src="./img/insider-pepsico.png" />
+												</div>
+												<div class="right">
+													<div class="copy">
+														<p class="sub-h1">
+															"We have used Innoget to both post technical
+															challenges as well as respond to Technology Calls
+															for potential out-licensing our IP in
+															non-competitive industries."
+														</p>
+													</div>
+													<div class="meta">
+														<ul>
+															<li class="dark bold name">Austin Kozman</li>
+															<li class="medium dark">R&D Director</li>
+															<li class="medium soft">PepsiCo</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-wrapper">
+												<div class="left">
+													<img src="./img/insider-beiersdorf.png" />
+												</div>
+												<div class="right">
+													<div class="copy">
+														<p class="sub-h1">
+															"The open innovation culture at Beiersdorf is
+															based on the four core values of our overall
+															company culture: simplicity, care, courage and
+															trust. We post briefings on Innoget because it's
+															easy to use and the low inhibition level for
+															asking and aswering questions."
+														</p>
+													</div>
+													<div class="meta">
+														<ul>
+															<li class="dark bold name">Heiner Gers-Barlag</li>
+															<li class="medium dark">
+																Team Leader Product and Packaging
+															</li>
+															<li class="medium soft">Beiersdorf AG</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-wrapper">
+												<div class="left">
+													<img src="./img/insider-metalsa.png" />
+												</div>
+												<div class="right">
+													<div class="copy">
+														<p class="sub-h1">
+															"Innoget helps us to keep exploring. It's about commitment, about an experimental philosophy, and keep accelerating innovation to keep the firm in a competitive position in the market."
+														</p>
+													</div>
+													<div class="meta">
+														<ul>
+															<li class="dark bold name">Javier Tenorio</li>
+															<li class="medium dark">
+																Open Innovation & IP
+															</li>
+															<li class="medium soft">Metalsa</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-wrapper">
+												<div class="left">
+													<img src="./img/insider-frieslandcampina.png" />
+												</div>
+												<div class="right">
+													<div class="copy">
+														<p class="sub-h1">
+															"Innoget helps us to draw attention to our innovation challenges, attracting external parties to share their innovative solutions."
+														</p>
+													</div>
+													<div class="meta">
+														<ul>
+															<li class="dark bold name">Peter Navarro</li>
+															<li class="medium dark">
+																Global Open Innovation Manager
+															</li>
+															<li class="medium soft">FrieslandCampina</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-wrapper">
+												<div class="left">
+													<img src="./img/insider-electrolux.png" />
+												</div>
+												<div class="right">
+													<div class="copy">
+														<p class="sub-h1">
+															"Innoget services provides us with access to a valuable and mixed network of potential partners. The robust platform, good customer support and reasonable price, makes Innoget a reliable player for anyone working in open innovation."
+														</p>
+													</div>
+													<div class="meta">
+														<ul>
+															<li class="dark bold name">Manuel Silva</li>
+															<li class="medium dark">
+																Open Innovation Manager
+															</li>
+															<li class="medium soft">Electrolux</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-wrapper">
+												<div class="left">
+													<img src="./img/insider-bonduelle.png" />
+												</div>
+												<div class="right">
+													<div class="copy">
+														<p class="sub-h1">
+															"Innoget allows my team to engage in a speedy, simple and effective manner with the world's inventors. The interface is simple and does not require a large investment in training or resources upfront."
+														</p>
+													</div>
+													<div class="meta">
+														<ul>
+															<li class="dark bold name">Patrick Lesueur</li>
+															<li class="medium dark">
+																Group R&D Director
+															</li>
+															<li class="medium soft">Bonduelle</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a
+										class="left carousel-control"
+										href="#myCarousel"
+										data-slide="prev"
+										><span class="glyphicon glyphicon-chevron-left"></span
+										><span class="sr-only">Previous</span></a
+									>
+									<a
+										class="right carousel-control"
+										href="#myCarousel"
+										data-slide="next"
+										><span class="glyphicon glyphicon-chevron-right"></span
+										><span class="sr-only">Next</span></a
+									>
+								</div>
+								<div class="logos">
+									<h3>Trusted by organizations worldwide</h3>
+									<div class="grid-h">
+										<img src="./img/logo-philipps.png" alt="Logo Philipps" />
+										<img
+											src="./img/logo-procter-and-gamble.png"
+											alt="Logo P&G"
+										/>
+										<img src="./img/logo-basf.png" alt="Logo BASF" />
+										<img
+											src="./img/logo-beiersdorf.png"
+											alt="Logo Beiersdorf"
+										/>
+										<img src="./img/logo-bmw.png" alt="Logo BMW" />
+										<img src="./img/logo-bonduelle.png" alt="Logo Bonduelle" />
+										<img src="./img/logo-clariant.png" alt="Logo Clariant" />
+										<img src="./img/logo-covestro.png" alt="Logo Covestro" />
+										<img
+											src="./img/logo-electrolux.png"
+											alt="Logo Electrolux"
+										/>
+										<img
+											src="./img/logo-frieslandcampina.png"
+											alt="Logo FrieslandCampina"
+										/>
+										<img src="./img/logo-hempel.png" alt="Logo Hempel" />
+										<img src="./img/logo-intel.png" alt="Logo Intel" />
+										<img src="./img/logo-pepsico.png" alt="Logo PepsiCo" />
+										<img src="./img/logo-hexion.png" alt="Logo Hexion" />
+										<img src="./img/logo-microsoft.png" alt="Logo Microsoft" />
+										<img src="./img/logo-metalsa.png" alt="Logo Metalsa" />
+										<img src="./img/logo-haier.png" alt="Logo Haier" />
+										<img src="./img/logo-isl.png" alt="Logo ICL" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="title-area call-to-action">
+							<p class="sub-h1">Still not sure about Innoget's trusted<br> Open Innovation Challenge solution?</h3>
+							<div class="buttons">
+								<a href="https://calendly.com/innoget/intro-corporate-plans?back=1&month=2020-11" title="Schedule a call" class="btn btn-blue btn-xl" target="_blank">Schedule a call</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>		
 		</main>
 		<footer>
 			<div class="container">
@@ -157,6 +502,7 @@
 									<img class="img-responsive" alt="Logo Innoget" src="./img/innoget-logo-full.svg" />
 									<span class="tagline soft regular">Business Solutions</span>
 								</div>
+								<p class="dark">Innoget Business Solutions offers an holistic approach to meet all your Open Innovation needs, maximizing the value of your innovation funnel by combining your internal capacities with inflows and outflows of ideas, technology, innovations and the access to external experts, startups and research organizations globally. </p>
 								<p>
 									2006 - 2020 © Innoget. All rights
 									reserved.
