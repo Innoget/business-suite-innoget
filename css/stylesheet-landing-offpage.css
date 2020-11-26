@@ -189,29 +189,30 @@ section {
 /*END GENERAL STYLES*/
 /*PAGE HEADER*/
 
-#header {
-	padding: 120px 0;
-	background: linear-gradient(
-			297.02deg,
-			rgba(255, 255, 255, 0) 0%,
-			rgba(255, 255, 255, 1) 60%,
-			rgba(255, 255, 255, 0.9) 100%
-		),
-		url(../img/business-services-background.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 20% 25%;
+#header .background {
 	border-bottom: 1px solid #CEDBE7;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: 20% 30% !important;
 }
 
 #header .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	min-height: 373px;
 }
 
-#header .left h1 {
+#header h1 {
 	max-width: 450px;
+	margin: 0;
+}
+
+#header .carousel-indicators li.active {
+    background-color: #1d7cee;
+}
+#header .carousel-indicators li {
+    border: 1px solid #1d7cee;
 }
 
 /*END PAGE HEADER*/
