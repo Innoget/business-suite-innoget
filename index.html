@@ -17,36 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="./css/stylesheet-landing-offpage.css" />
 		<link rel="stylesheet" type="text/css" href="./css/stylesheet-global.css" />
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-		<script type="text/javascript">
-			google.charts.load("current", {
-				packages: ["geochart"],
-				mapsApiKey: "AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY",
-			});
-			google.charts.setOnLoadCallback(drawRegionsMap);
-			function drawRegionsMap() {
-				var data = google.visualization.arrayToDataTable([
-					["Region code", "Continent", "Region of origin (%)"],
-					["150", "Europe", 44],
-					["019", "Americas", 32],
-					["142", "Asia", 22],
-					["009", "Oceania", 22],
-					["002", "Africa", 2],
-				]);
-				var options = {
-					region: "world",
-					resolution: "continents",
-					legend: "none",
-					colorAxis: {
-						minValue: 0,
-						colors: ["#B6CCE7", "#1D7CEE"],
-					},
-				};
-				var chart = new google.visualization.GeoChart(
-					document.getElementById("regions_div")
-				);
-				chart.draw(data, options);
-			}
-		</script>
+		<script type="text/javascript" src="./js/charts.js"></script>
 	</head>
 	<body>
 		<div id="overlay"></div>
@@ -288,7 +259,9 @@
 											<a href="https://www.innoget.com/for-research-organizations" title="Innoget.com for R&D Organizations" rel="nofollow" target="_blank">Innoget.com for R&D Organizations</a>
 										</li>
 										<li class="blue regular normal">Innoget.com for Scientists</li>
-										<li class="blue regular normal">Open Innovation Groups</li>
+										<li class="blue regular normal">
+											<a href="https://www.innoget.com/group/covid-19-open-innovation-initiative" title="Open Innovation Groups" target="_blank" rel="nofollow">Open Innovation Groups</a>
+										</li>
 										<li class="blue regular normal">
 											<a href="https://www.innoget.com/innovation-jobs" title="Innovation Jobs" rel="follow" target="_blank">Innovation Jobs</a>
 										</li>
@@ -318,8 +291,12 @@
 										<li class="blue regular normal">
 											<a href="https://business.innoget.com/open-innovation-programs/open-innovation-challenge" title="Open Innovation Challenge" rel="follow" target="_blank">Open Innovation Challenge</a>
 										</li>
-										<li class="blue regular normal">Idea Contest</li>
-										<li class="blue regular normal">Startup Contest</li>
+										<li class="blue regular normal">
+											<a href="https://business.innoget.com/open-innovation-programs/open-innovation-challenge" title="Idea Contest" rel="follow" target="_blank">Idea Contest</a>
+										</li>
+										<li class="blue regular normal">
+											<a href="https://business.innoget.com/open-innovation-programs/open-innovation-challenge" title="Startup Contest" rel="follow" target="_blank">Startup Contest</a>
+										</li>
 										<li class="blue regular normal">Open Innovation Consulting</li>
 									</ul>
 								</div>
@@ -398,6 +375,14 @@
 									</div>
 								</div>
 							</div>
+						</div>
+					</div>
+					<div class="row network-breakdown">
+						<div class="col-sm-6">
+							<div id="donutchart_div"></div>
+						</div>
+						<div class="col-sm-6">
+							<div id="donutchart_div2"></div>
 						</div>
 					</div>
 				</div>
