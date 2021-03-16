@@ -292,6 +292,36 @@ section {
 }
 
 /*END CORNERSTONES*/
+/*TECHNOLOGIES*/
+
+.technologies .title-area {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.technologies {
+  margin-top: 60px;
+}
+
+.technologies .technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px;
+  text-align: center;
+}
+
+.technologies-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.technologies-wrapper .technology-icon img {
+  width: 50px;
+}
+
+/*END TECHNOLOGIES*/
 /*NETWORK*/
 
 #network .wrapper {

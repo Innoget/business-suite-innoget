@@ -36,7 +36,7 @@ google.charts.setOnLoadCallback(drawStacked);
 
 function drawStacked() {
   var data = google.visualization.arrayToDataTable([
-    ["Account type", "%"],
+    ["", "%"],
     ["SMEs, Startups and Spinoffs", 36.3],
     ["Scientists and Experts", 22.0],
     ["Research and Technology Organizations", 17.6],
@@ -56,9 +56,6 @@ function drawStacked() {
     hAxis: {
       minValue: 0,
     },
-    vAxis: {
-      title: "Account Type",
-    },
   };
   var chart = new google.visualization.BarChart(
     document.getElementById("donutchart_div")
@@ -71,8 +68,8 @@ google.charts.setOnLoadCallback(drawStacked2);
 
 function drawStacked2() {
   var data = google.visualization.arrayToDataTable([
-    ["Research areas", "%"],
-    ["Industrial Manufacturing and Transport", 11.8],
+    ["", "%"],
+    ["Manufacturing and Transport", 11.8],
     ["Industrial Technologies", 11.8],
     ["Biological Sciences", 10.8],
     ["Agro-food Industry", 9.7],
@@ -95,9 +92,6 @@ function drawStacked2() {
     isStacked: true,
     hAxis: {
       minValue: 0,
-    },
-    vAxis: {
-      title: "Research Area",
     },
   };
   var chart = new google.visualization.BarChart(
